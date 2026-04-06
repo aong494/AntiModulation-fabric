@@ -9,7 +9,6 @@ import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 public class AntiModulationClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		// 모장 매핑에 맞춰서 TYPE으로 등록해.
 		PayloadTypeRegistry.playC2S().register(VerifyPayload.TYPE, VerifyPayload.CODEC);
 
 		ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> {
