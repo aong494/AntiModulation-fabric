@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "aong.antimodulaiton.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin",
+		"ServerAddressMaskMixin",
+		"EditBoxMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
